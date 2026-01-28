@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Projects | 이성훈 Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <!-- Noise Overlay -->
+    <div class="noise"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>
+            <span class="logo-text">SH</span>
+            <span class="logo-bracket">/&gt;</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="web.html" class="nav-link active">Web</a>
+            <a href="ai.html" class="nav-link">AI</a>
+            <a href="https://github.com/YeAn475" target="_blank" class="nav-link nav-github">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="page-header-content">
+            <a href="index.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                <span>Back</span>
+            </a>
+            <div class="page-badge web">Web Projects</div>
+            <h1 class="page-title">웹 개발 프로젝트</h1>
+            <p class="page-subtitle">Spring Boot, Flask 기반 풀스택 웹 애플리케이션</p>
+        </div>
+    </header>
+
+    <!-- Projects List -->
+    <main class="projects-container">
+        
+        <!-- Project 1: 다구독 -->
+        <article class="project-card featured" id="dagudok">
+            <div class="project-header">
+                <div class="project-number">01</div>
+                <div class="project-meta">
+                    <span class="project-type">Team Project</span>
+                    <span class="project-period">2024</span>
+                </div>
+            </div>
+            
+            <div class="project-content">
+                <div class="project-info">
+                    <h2 class="project-title">다구독 (Subsub Clipclop)</h2>
+                    <p class="project-tagline">OTT 구독 고객 관리 B2B SaaS 플랫폼</p>
+                    
+                    <div class="project-description">
+                        <p>OTT 서비스를 운영하는 기업이 고객 행동 데이터를 업로드하고, 구독 현황 분석, 고객 세그먼트 추출, <strong>이탈 예측 및 맞춤 전략 추천</strong>까지 자동화된 분석과 시각화를 제공받을 수 있는 통합 플랫폼입니다.</p>
+                        <p>SHAP 기반의 머신러닝 예측 모델을 활용해 이탈 위험 고객을 사전 식별하고 맞춤형 마케팅 전략을 제공합니다.</p>
+                    </div>
+                    
+                    <div class="project-features">
+                        <h3>주요 기능</h3>
+                        <ul>
+                            <li>로그인 및 권한 관리 (JWT 인증)</li>
+                            <li>고객 데이터 업로드 (Excel/CSV)</li>
+                            <li>구독 현황 및 세그먼트 분석</li>
+                            <li>코호트 분석 및 이탈 예측</li>
+                            <li>결제 시스템 연동</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <h3>기술 스택</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag backend">Spring Boot 3</span>
+                            <span class="tech-tag backend">JPA</span>
+                            <span class="tech-tag backend">Spring Security</span>
+                            <span class="tech-tag frontend">React</span>
+                            <span class="tech-tag frontend">TypeScript</span>
+                            <span class="tech-tag frontend">TailwindCSS</span>
+                            <span class="tech-tag ai">Flask</span>
+                            <span class="tech-tag ai">SHAP</span>
+                            <span class="tech-tag db">MariaDB</span>
+                            <span class="tech-tag db">Redis</span>
+                            <span class="tech-tag devops">AWS EC2</span>
+                            <span class="tech-tag devops">GitHub Actions</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/beyond-sw-camp/be13-fin-aesopwow-subsub_clipclop-BE" target="_blank" class="project-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Backend
+                        </a>
+                        <a href="https://github.com/beyond-sw-camp/be13-fin-aesopwow-subsub_clipclop-FE" target="_blank" class="project-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Frontend
+                        </a>
+                        <a href="https://github.com/beyond-sw-camp/be13-fin-aesopwow-subsub_clipclop-ML" target="_blank" class="project-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            ML/AI
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-media">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/2bzdg2TXu-4" 
+                            title="다구독 프로젝트 데모"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project 2: 허겁직업 -->
+        <article class="project-card" id="hugupjigup">
+            <div class="project-header">
+                <div class="project-number">02</div>
+                <div class="project-meta">
+                    <span class="project-type">Team Project</span>
+                    <span class="project-period">2024</span>
+                </div>
+            </div>
+            
+            <div class="project-content">
+                <div class="project-info">
+                    <h2 class="project-title">허겁직업 (HugUpJigUp)</h2>
+                    <p class="project-tagline">취업 준비생을 위한 멘토링 및 정보 공유 커뮤니티</p>
+                    
+                    <div class="project-description">
+                        <p>취업 준비 과정에서 막막함을 느끼는 취준생들에게 실질적인 도움을 제공하기 위해, <strong>최신 정보와 노하우를 공유</strong>하고 <strong>전문가 멘토링 및 네트워킹을 지원</strong>하는 커뮤니티 플랫폼입니다.</p>
+                        <p>기존 취준 커뮤니티와 멘토링 시스템을 결합하여 모든 유저가 멘토와 멘티로 상호작용할 수 있는 <strong>다분야 상호 멘토링 시스템</strong>이 특징입니다.</p>
+                    </div>
+                    
+                    <div class="project-features">
+                        <h3>주요 기능</h3>
+                        <ul>
+                            <li>이메일 로그인/회원가입 (OTP 인증)</li>
+                            <li>회원 프로필 및 멘토링 히스토리 관리</li>
+                            <li>멘토/멘티 모집 게시판 (비밀 댓글)</li>
+                            <li>자유 게시판 및 취업정보 게시판</li>
+                            <li>멘토링 후기 및 평점 시스템</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <h3>기술 스택</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag backend">Spring Boot</span>
+                            <span class="tech-tag backend">Spring JPA</span>
+                            <span class="tech-tag backend">Spring Security</span>
+                            <span class="tech-tag db">MariaDB</span>
+                            <span class="tech-tag db">Redis</span>
+                            <span class="tech-tag devops">Swagger UI</span>
+                        </div>
+                    </div>
+
+                    <div class="project-role">
+                        <h3>담당 역할</h3>
+                        <p>프로필 관리 기능 개발</p>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/beyond-sw-camp/be13-2nd-Hugudungs-HugUpJigUp-BE" target="_blank" class="project-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Backend
+                        </a>
+                        <a href="https://github.com/beyond-sw-camp/be13-3rd-Hugudungs-HugUpJigUp-FE" target="_blank" class="project-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Frontend
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-media">
+                    <div class="project-image-placeholder">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <path d="M21 15l-5-5L5 21"/>
+                        </svg>
+                        <span>프로젝트 이미지</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project 3: Listify -->
+        <article class="project-card" id="listify">
+            <div class="project-header">
+                <div class="project-number">03</div>
+                <div class="project-meta">
+                    <span class="project-type">Team Project</span>
+                    <span class="project-period">2024</span>
+                </div>
+            </div>
+            
+            <div class="project-content">
+                <div class="project-info">
+                    <h2 class="project-title">Listify 🎵</h2>
+                    <p class="project-tagline">음악 추천 및 플레이리스트 관리 웹 서비스</p>
+                    
+                    <div class="project-description">
+                        <p><strong>Spotify API</strong>와 연동하여 음악을 추천하고, 사용자가 직접 플레이리스트를 만들고 관리할 수 있는 풀스택 웹 프로젝트입니다.</p>
+                        <p>React 기반의 프론트엔드와 Flask 기반의 백엔드, MySQL 데이터베이스, Docker를 활용한 배포 환경을 갖추고 있습니다.</p>
+                    </div>
+                    
+                    <div class="project-features">
+                        <h3>주요 기능</h3>
+                        <ul>
+                            <li>회원가입 및 로그인 (JWT 인증)</li>
+                            <li>음악 추천 및 검색 (Spotify API)</li>
+                            <li>플레이리스트 생성/관리</li>
+                            <li>음악 미리듣기 (Spotify 웹 플레이어)</li>
+                            <li>사용자 프로필 관리</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <h3>기술 스택</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag backend">Flask</span>
+                            <span class="tech-tag backend">Python</span>
+                            <span class="tech-tag frontend">React</span>
+                            <span class="tech-tag frontend">TypeScript</span>
+                            <span class="tech-tag frontend">Vite</span>
+                            <span class="tech-tag db">MySQL</span>
+                            <span class="tech-tag devops">Docker</span>
+                            <span class="tech-tag api">Spotify API</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/YeAn475/Listify" target="_blank" class="project-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-media">
+                    <div class="project-image-placeholder video-coming">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polygon points="5 3 19 12 5 21 5 3"/>
+                        </svg>
+                        <span>데모 영상 준비 중</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 이성훈. Built with passion.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
