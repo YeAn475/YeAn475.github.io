@@ -62,24 +62,14 @@
                         <p>OTT 서비스를 운영하는 기업이 고객 행동 데이터를 업로드하고, 구독 현황 분석, 고객 세그먼트 추출, <strong>이탈 예측 및 맞춤 전략 추천</strong>까지 자동화된 분석과 시각화를 제공받을 수 있는 통합 플랫폼입니다.</p>
                     </div>
                     
-                    <div class="project-features">
-                        <h3>주요 기능</h3>
-                        <ul>
-                            <li>로그인 및 권한 관리 (JWT 인증)</li>
-                            <li>고객 데이터 업로드 (Excel/CSV)</li>
-                            <li>구독 현황 및 세그먼트 분석</li>
-                            <li>코호트 분석 및 이탈 예측 (SHAP)</li>
-                        </ul>
-                    </div>
-
                     <div class="project-role">
                         <h3>담당 역할</h3>
                         <ul>
-                            <li>Spring Security 및 JWT 기반 보안 아키텍처 설계</li>
-                            <li>Redis를 활용한 Refresh Token 관리 시스템 구현</li>
+                            <li>Spring Security + JWT 기반 보안 아키텍처 설계</li>
+                            <li>Redis 활용 Refresh Token 관리 시스템 구현</li>
                             <li>Flask 기반 세그먼트 분류 모델 개발</li>
-                            <li>Spring Boot와 Flask 연동, S3 저장/호출 기능 개발</li>
-                            <li>AWS EC2에 Flask 환경 구축 및 배포</li>
+                            <li>Spring Boot ↔ Flask 연동, S3 저장/호출</li>
+                            <li>AWS EC2 Flask 환경 구축 및 배포</li>
                         </ul>
                     </div>
                     
@@ -90,6 +80,7 @@
                             <span class="tech-tag backend">Spring Security</span>
                             <span class="tech-tag frontend">React</span>
                             <span class="tech-tag ai">Flask</span>
+                            <span class="tech-tag ai">SHAP</span>
                             <span class="tech-tag db">MariaDB</span>
                             <span class="tech-tag db">Redis</span>
                             <span class="tech-tag devops">AWS EC2/S3</span>
@@ -129,15 +120,6 @@
                     <div class="project-description">
                         <p>취준생들에게 <strong>최신 정보와 노하우를 공유</strong>하고 <strong>전문가 멘토링 및 네트워킹을 지원</strong>하는 커뮤니티 플랫폼입니다. 모든 유저가 멘토와 멘티로 상호작용할 수 있는 <strong>다분야 상호 멘토링 시스템</strong>이 특징입니다.</p>
                     </div>
-                    
-                    <div class="project-features">
-                        <h3>주요 기능</h3>
-                        <ul>
-                            <li>이메일 로그인/회원가입 (OTP 인증)</li>
-                            <li>멘토/멘티 모집 게시판 (비밀 댓글)</li>
-                            <li>멘토링 후기 및 평점 시스템</li>
-                        </ul>
-                    </div>
 
                     <div class="project-role">
                         <h3>담당 역할</h3>
@@ -153,6 +135,7 @@
                         <div class="tech-tags">
                             <span class="tech-tag backend">Spring Boot</span>
                             <span class="tech-tag backend">Spring Security</span>
+                            <span class="tech-tag backend">JPA</span>
                             <span class="tech-tag db">MariaDB</span>
                             <span class="tech-tag db">Redis</span>
                         </div>
@@ -188,24 +171,25 @@
                     <p class="project-tagline">음악 추천 및 플레이리스트 관리 웹 서비스</p>
                     
                     <div class="project-description">
-                        <p><strong>Spotify API</strong>와 연동하여 음악을 추천하고, 사용자가 직접 플레이리스트를 만들고 관리할 수 있는 풀스택 웹 프로젝트입니다.</p>
+                        <p><strong>Spotify API</strong>와 연동하여 음악을 추천하고, 사용자가 직접 플레이리스트를 만들고 관리할 수 있는 풀스택 웹 프로젝트입니다. Docker 컨테이너화 및 ngrok을 활용한 외부 배포까지 진행했습니다.</p>
                     </div>
                     
                     <div class="project-features">
                         <h3>주요 기능</h3>
                         <ul>
                             <li>회원가입 및 로그인 (JWT 인증)</li>
-                            <li>음악 추천 및 검색 (Spotify API)</li>
-                            <li>플레이리스트 생성/관리</li>
-                            <li>음악 미리듣기</li>
+                            <li>Spotify API 연동 음악 검색/추천</li>
+                            <li>플레이리스트 생성/관리/공유</li>
+                            <li>음악 미리듣기 (Spotify 웹 플레이어)</li>
                         </ul>
                     </div>
 
                     <div class="project-role">
                         <h3>담당 역할</h3>
                         <ul>
-                            <li>Flask 기반 Spotify API 연동 백엔드 API 설계</li>
+                            <li>Flask 기반 Spotify API 연동 백엔드 설계</li>
                             <li>MySQL DB 모델링 및 CRUD 로직 구현</li>
+                            <li>Docker 컨테이너화 및 ngrok 배포</li>
                         </ul>
                     </div>
                     
@@ -213,10 +197,12 @@
                         <h3>기술 스택</h3>
                         <div class="tech-tags">
                             <span class="tech-tag backend">Flask</span>
+                            <span class="tech-tag backend">Python</span>
                             <span class="tech-tag frontend">React</span>
                             <span class="tech-tag frontend">TypeScript</span>
                             <span class="tech-tag db">MySQL</span>
                             <span class="tech-tag devops">Docker</span>
+                            <span class="tech-tag devops">ngrok</span>
                             <span class="tech-tag api">Spotify API</span>
                         </div>
                     </div>
@@ -227,9 +213,8 @@
                 </div>
                 
                 <div class="project-media">
-                    <div class="project-image-placeholder video-coming">
-                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                        <span>데모 영상 준비 중</span>
+                    <div class="project-image">
+                        <img src="listify.png" alt="Listify 프로젝트">
                     </div>
                 </div>
             </div>
